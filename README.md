@@ -1,2 +1,2 @@
 # Selenium 
-Trçar a Rota e Trazer um melhor caminho
+Traçar a Rota e Trazer um melhor caminho
