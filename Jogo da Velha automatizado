@@ -1,0 +1,35 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import os
+import time
+import re
+import json
+from datetime import datetime
+from collections import Counter as cnt
+
+driver = webdriver.Chrome('C:/Path/to/chromedriver')
+driver.get("https://www.google.com/search?q=jogar%20jogo%20da%20velha&rlz=1C1GCEU_pt-BRBR912BR912&sxsrf=ALeKk019hDwDLFALozcdy5ZhO2QIey_-Iw%3A1616689403510&ei=-7hcYM7ZHqil5OUPyMui8Ak&oq=jogo+da+velha+online&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgcIIxCwAxAnOgcIABBHELADOgQIIxAnOgQIABBDOgIILlDnHFj-M2DZNGgDcAJ4AIAB9QGIAYQgkgEGMC41LjE0mAEAoAEBqgEHZ3dzLXdpesgBCcABAQ&sclient=gws-wiz&ved=0ahUKEwiOw-6s7cvvAhWoErkGHcilCJ4Q4dUDCA0&uact=5&stick=H4sIAAAAAAAAAOOwfcQoxS3w8sc9YSnBSWtOXmPk5uIMyUwOSUwOyU_lAQCnLbXBHwAAAA")
+time.sleep(1)
+driver.find_element_by_xpath('/html/body/div[7]/div/div[9]/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div[1]/div/div[1]/div/div/div/div[1]/g-dropdown-menu/g-popup/div[1]').click()
+time.sleep(1)
+driver.find_element_by_xpath('/html/body/div[7]/div/div[6]/div/g-menu/g-menu-item[1]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[1]/td[3]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[3]/td[3]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[3]/td[1]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[1]/td[1]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[2]/td[2]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[2]/td[3]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[2]/td[1]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[3]/td[2]').click()
+time.sleep(1)
+driver.find_element_by_xpath('//*[@id="rso"]/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/table/tbody/tr[1]/td[2]').click()
+time.sleep(1)
+driver.find_element_by_xpath('/html/body/div[7]/div/div[9]/div[1]/div/div[2]/div[2]/div/div/div[1]/div/div[1]/div/div[1]/div/div/div/div[2]/div').click()
